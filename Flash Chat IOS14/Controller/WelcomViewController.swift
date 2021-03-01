@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomViewController.swift
 //  Flash Chat IOS14
 //
 //  Created by 程式猿 on 2021/3/1.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+       
+    }
+    
 
 }
-
