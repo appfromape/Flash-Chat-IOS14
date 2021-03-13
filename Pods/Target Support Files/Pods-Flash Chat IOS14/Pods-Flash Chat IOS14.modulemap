@@ -1,0 +1,6 @@
+framework module Pods_Flash_Chat_IOS14 {
+  umbrella header "Pods-Flash Chat IOS14-umbrella.h"
+
+  export *
+  module * { export * }
+}

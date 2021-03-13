@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A617EA9FEE5E6C9CCBCBC4A /* Pods_Flash_Chat_IOS14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462BDACE7D67C690D78DFF62 /* Pods_Flash_Chat_IOS14.framework */; };
 		A0CAB72025ECEC0C00919222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CAB71F25ECEC0C00919222 /* AppDelegate.swift */; };
 		A0CAB72225ECEC0C00919222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CAB72125ECEC0C00919222 /* SceneDelegate.swift */; };
 		A0CAB72725ECEC0C00919222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CAB72525ECEC0C00919222 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D44C6020740F5A1C49D412 /* Pods-Flash Chat IOS14.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat IOS14.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat IOS14/Pods-Flash Chat IOS14.debug.xcconfig"; sourceTree = "<group>"; };
+		462BDACE7D67C690D78DFF62 /* Pods_Flash_Chat_IOS14.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat_IOS14.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CAB71C25ECEC0C00919222 /* Flash Chat IOS14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat IOS14.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CAB71F25ECEC0C00919222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CAB72125ECEC0C00919222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		A0CAB73B25ECEDB800919222 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A0CAB73E25ECEDCA00919222 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A0CAB74125ECEDDD00919222 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A4F70AC3C60B991B836B282D /* Pods-Flash Chat IOS14.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat IOS14.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat IOS14/Pods-Flash Chat IOS14.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A617EA9FEE5E6C9CCBCBC4A /* Pods_Flash_Chat_IOS14.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B14BC88D48A53D26AE8F0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				462BDACE7D67C690D78DFF62 /* Pods_Flash_Chat_IOS14.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0CAB71325ECEC0C00919222 = {
 			isa = PBXGroup;
 			children = (
 				A0CAB71E25ECEC0C00919222 /* Flash Chat IOS14 */,
 				A0CAB71D25ECEC0C00919222 /* Products */,
+				A3E80EDA6133C030820A626E /* Pods */,
+				8B14BC88D48A53D26AE8F0F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +115,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A3E80EDA6133C030820A626E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00D44C6020740F5A1C49D412 /* Pods-Flash Chat IOS14.debug.xcconfig */,
+				A4F70AC3C60B991B836B282D /* Pods-Flash Chat IOS14.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0CAB73025ECEC0C00919222 /* Build configuration list for PBXNativeTarget "Flash Chat IOS14" */;
 			buildPhases = (
+				3D37A376D754267BE2998CC5 /* [CP] Check Pods Manifest.lock */,
 				A0CAB71825ECEC0C00919222 /* Sources */,
 				A0CAB71925ECEC0C00919222 /* Frameworks */,
 				A0CAB71A25ECEC0C00919222 /* Resources */,
+				647A61D94C4C7629761C6FD4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +191,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D37A376D754267BE2998CC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flash Chat IOS14-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		647A61D94C4C7629761C6FD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flash Chat IOS14/Pods-Flash Chat IOS14-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flash Chat IOS14/Pods-Flash Chat IOS14-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flash Chat IOS14/Pods-Flash Chat IOS14-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0CAB71825ECEC0C00919222 /* Sources */ = {
@@ -319,6 +388,7 @@
 		};
 		A0CAB73125ECEC0C00919222 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D44C6020740F5A1C49D412 /* Pods-Flash Chat IOS14.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +408,7 @@
 		};
 		A0CAB73225ECEC0C00919222 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F70AC3C60B991B836B282D /* Pods-Flash Chat IOS14.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
