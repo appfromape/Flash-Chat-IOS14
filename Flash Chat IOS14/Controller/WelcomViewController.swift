@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
 
@@ -25,6 +26,9 @@ class WelcomeViewController: UIViewController {
             }
             charIndex += 1
         }
+        
+        
+//        titleLabel.text = "⚡️FlashChat"
         
 
        
